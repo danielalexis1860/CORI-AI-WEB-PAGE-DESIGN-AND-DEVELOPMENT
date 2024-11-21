@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* background: url('IMG/coribackground.jpg') no-repeat center center fixed;  */
+    background-size: cover; /* Ensure the background covers the entire screen */
+ background: rgba(0, 0, 0, 0.938); 
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    background: linear-gradient(90deg, rgba(0,0,0,0.8), rgba(0,0,0,0.2));
+    color: white;
+    height: 70px;   /*100px */
+    width: 800px;
+    margin-left: /* 125px; */  25px;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ff00ff;
+    font-size: 25px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto; 
+}
+
+.get-started {
+    padding: 33px 50px;    
+    background-color: #ff00ff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    height: 70px;
+    width: 200px;
+    
+
+}
+
+.get-started:hover {
+    background-color: purple;
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    background-color: black; /* Background for the marquee */
+    color: #ff00ff; /* Text color */
+    white-space: nowrap;
+    box-sizing: border-box;
+    height: 100px;
+}
+
+.marquee-content {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 50s linear infinite;
+    font-size: 70px; /* Font size for the marquee text */
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .get-started {
+        margin-top: 10px;
+    }
+}
+
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+/*   */
+.second-Background {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #231031;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.second-BackgroundContainer {
+    text-align: center;
+    padding: 20px;
+     margin-top: 35px;
+}
+
+h1 {
+    color: #da3cdd;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    display: block;
+    max-width: 900px;
+    font-size: 25px;
+    line-height: 1.8em;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item h2 {
+    color: #e839e6;
+    font-size: 3em;
+    margin: 0;
+}
+
+.stat-item p {
+    color: #e5e5e5;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* GRID */
+body {
+    background-color: #2e003e; /* Background matching your previous images */
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .ai-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between the cards */
+    padding: 20px;
+  }
+  
+  .ai-item {
+    background-color: #3b0b51; /* Slightly lighter purple background for the cards */
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .ai-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  .ai-item p {
+    margin-top: 15px;
+    font-size: 1.2rem;
+  }
+
+  /*2ND  MARQUE */
+  .marquee2 {
+    width: 100%;
+    overflow: hidden;
+    background-color: black; /* Background for the marquee */
+    color: #ff00ff; /* Text color */
+    white-space: nowrap;
+    box-sizing: border-box;
+    height: 200px;
+
+}
+
+.marquee-content2 {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 50s linear infinite;
+    font-size: 100px; /* Font size for the marquee text */
+}
+
+  /* FOOTER STYLING */
+  footer {
+    background-color: #2e003e; /* Dark purple background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    padding: 20px;
+  }
+  
+  .footer-content h2 {
+    font-size: 2.5rem;
+    color: white;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+  }
+  
+  .social-item span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: magenta; /* Instagram, TikTok, YouTube, Twitter text color */
+  }
+  
+  .social-item p {
+    margin: 0;
+  }
+  
+  .footer-bottom {
+    background-color: black;
+    padding: 10px 0;
+    margin-top: 30px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  .footer-bottom span {
+    color: magenta;
+  }
+  
+
+  .background-image{
+    margin-top: 5px;
+    
+  }
+
+  .background-image:hover{
+    background: 
+  }
+
+  .navbar:hover{
+    background-color: transparent;
+  }
+
+  /* STYLE FOR FUTURE INNOVATION SECTION */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.future {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #000;
+}
+
+.card {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 15px;
+    width: 45%;
+    height: 150px;
+}
+
+/*
+.get-started {
+    width: 45%;
+}  
+ */
+ 
+.started h2 {
+    color: #00eaff;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+ 
+.started p{
+    font-size: 10px;
+    width: 350px;
+    margin-top: 10px;
+}
+
+.card h2{
+  
+}
+.card p{
+  font-size: 10px;
+  margin-top: 10px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+}
+.get-started .buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.sign-up {
+    background-color: #d31fff;
+    color: white;
+    margin-top: -20px;
+}
+
+.login {
+    border: 2px solid #00eaff;
+    color: #00eaff;
+}
